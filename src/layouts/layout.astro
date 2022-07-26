@@ -1,0 +1,16 @@
+---
+import "../styles/fonts.css";
+import "../styles/custom.css";
+import { Navbar } from "../components/navigation/Navbar";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <slot name="head" />
+    </head>
+    <body class="flex flex-col min-h-screen bg-black-light text-white-alt font-normal bg-site-gradient drop-shadow-lg">
+        <Navbar client:visible />
+        <slot />
+    </body>
+</html>

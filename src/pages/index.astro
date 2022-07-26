@@ -1,0 +1,14 @@
+---
+import Metas from "../components/Metas.astro";
+import Layout from "../layouts/layout.astro";
+
+const metas = {
+    title: "Home",
+    description: "Homepage description",
+    featuredImage: "#",
+};
+---
+
+<Layout>
+    <Metas slot="head" {...metas} />
+</Layout>

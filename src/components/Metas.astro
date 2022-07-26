@@ -1,0 +1,35 @@
+---
+export interface Props {
+    title: string; // 60 characters or fewer, if possible
+    description: string; // 160 characters or fewer, if possible
+    featuredImage: string;
+    faviconUrl?: string;
+}
+
+const {
+    title,
+    description,
+    featuredImage,
+    faviconUrl = "/favicon.ico",
+} = Astro.props as Props;
+
+const currentUrl = Astro.url;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="icon" href={faviconUrl} />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={`Alex Six | ${title}`} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={featuredImage} />
+
+<meta name="og:title" content={title} />
+<meta name="og:description" content={description} />
+<meta name="og:image" content={featuredImage} />
+<meta name="og:url" content={currentUrl} />
