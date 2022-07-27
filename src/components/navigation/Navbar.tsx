@@ -56,37 +56,6 @@ export const Navbar = () => {
                     </div>
                 </nav>
             </div>
-
-            {/* <nav */}
-            {/*     class={`lg:hidden fixed top-0 right-0 bottom-0 bg-black-dark w-3/4 p-6 transform duration-300 ease-out ${ */}
-            {/*         isOpen ? "" : "hidden" */}
-            {/*     }`} */}
-            {/*     aria-label="Global" */}
-            {/* > */}
-            {/*     <div class="mb-10 flex items-center justify-end"> */}
-            {/*         <button onClick={toggleMenu} aria-label="Close Menu"> */}
-            {/*             <CloseIcon /> */}
-            {/*         </button> */}
-            {/*     </div> */}
-            {/*     <div class="flex flex-col gap-6"> */}
-            {/*         <NavLink href="/"> */}
-            {/*             <HouseIcon /> */}
-            {/*             Home */}
-            {/*         </NavLink> */}
-            {/*         <NavLink href="/"> */}
-            {/*             <PostIcon /> */}
-            {/*             Posts */}
-            {/*         </NavLink> */}
-            {/*         <NavLink href="/"> */}
-            {/*             <ContactIcon /> */}
-            {/*             Contact */}
-            {/*         </NavLink> */}
-            {/*         <NavLink href="/"> */}
-            {/*             <UsesIcon /> */}
-            {/*             Uses */}
-            {/*         </NavLink> */}
-            {/*     </div> */}
-            {/* </nav> */}
         </header>
     );
 };
