@@ -14,18 +14,24 @@ export const Navbar = () => {
     };
 
     return (
-        <div class="w-full h-screen overflow-hidden">
-            <nav class="flex items-center justify-end py-3 px-4">
+        <header class="w-full overflow-x-hidden">
+            <div class="flex items-center justify-end py-3 px-4">
                 <button class="p-2" onClick={toggleMenu} aria-label="Open Menu">
                     <HamburgerIcon />
                 </button>
+            </div>
 
-                <div
-                    class={`fixed top-0 right-0 bottom-0 z-50 w-10/12 transform bg-black-dark p-6 duration-300 ease-out ${
-isOpen ? "translate-x-0" : "translate-x-full"
-}`}
+            <div
+                class={`fixed inset-0 h-screen overflow-x-hidden bg-transparent ${
+                    isOpen ? "pointer-events-auto" : "pointer-events-none"
+                }`}
+            >
+                <nav
+                    class={`top-0 bottom-0 right-0 absolute w-3/4 transform bg-black-dark p-6 duration-300 ease-out ${
+                        isOpen ? "translate-x-0" : "translate-x-full"
+                    }`}
                 >
-                    <div class="flex justify-end items-center mb-10">
+                    <div class="mb-10 flex items-center justify-end">
                         <button onClick={toggleMenu} aria-label="Close Menu">
                             <CloseIcon />
                         </button>
@@ -48,8 +54,39 @@ isOpen ? "translate-x-0" : "translate-x-full"
                             Uses
                         </NavLink>
                     </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
+
+            {/* <nav */}
+            {/*     class={`lg:hidden fixed top-0 right-0 bottom-0 bg-black-dark w-3/4 p-6 transform duration-300 ease-out ${ */}
+            {/*         isOpen ? "" : "hidden" */}
+            {/*     }`} */}
+            {/*     aria-label="Global" */}
+            {/* > */}
+            {/*     <div class="mb-10 flex items-center justify-end"> */}
+            {/*         <button onClick={toggleMenu} aria-label="Close Menu"> */}
+            {/*             <CloseIcon /> */}
+            {/*         </button> */}
+            {/*     </div> */}
+            {/*     <div class="flex flex-col gap-6"> */}
+            {/*         <NavLink href="/"> */}
+            {/*             <HouseIcon /> */}
+            {/*             Home */}
+            {/*         </NavLink> */}
+            {/*         <NavLink href="/"> */}
+            {/*             <PostIcon /> */}
+            {/*             Posts */}
+            {/*         </NavLink> */}
+            {/*         <NavLink href="/"> */}
+            {/*             <ContactIcon /> */}
+            {/*             Contact */}
+            {/*         </NavLink> */}
+            {/*         <NavLink href="/"> */}
+            {/*             <UsesIcon /> */}
+            {/*             Uses */}
+            {/*         </NavLink> */}
+            {/*     </div> */}
+            {/* </nav> */}
+        </header>
     );
 };

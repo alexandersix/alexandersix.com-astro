@@ -1,6 +1,12 @@
 ---
 import Metas from "../components/Metas.astro";
+import { PageHeading } from "../components/typography/PageHeading";
+import { PageSection } from "../components/layout/PageSection";
 import Layout from "../layouts/layout.astro";
+import { PageSubtitle } from "../components/typography/PageSubtitle";
+
+import headerImage from "/images/homepage-hero-mobile.jpg";
+import { Image } from "../components/Image";
 
 const metas = {
     title: "Home",
@@ -11,4 +17,15 @@ const metas = {
 
 <Layout>
     <Metas slot="head" {...metas} />
+    <PageSection>
+        <PageHeading>Hi, I'm Alex</PageHeading>
+        <div class="flex flex-col gap-y-3 mt-8 mb-10">
+            <PageSubtitle>Web Developer,</PageSubtitle>
+            <PageSubtitle>Streamer,</PageSubtitle>
+            <PageSubtitle>Corgi Fanatic.</PageSubtitle>
+        </div>
+        <Image src={headerImage} alt="Alex holding his corgi, Leia" />
+        <div class="flex justify-between items-center">
+        </div>
+    </PageSection>
 </Layout>
