@@ -41,15 +41,15 @@ export const Navbar = () => {
                             <HouseIcon />
                             Home
                         </NavLink>
-                        <NavLink href="/">
+                        <NavLink href="/posts">
                             <PostIcon />
                             Posts
                         </NavLink>
-                        <NavLink href="/">
+                        <NavLink href="/contact">
                             <ContactIcon />
                             Contact
                         </NavLink>
-                        <NavLink href="/">
+                        <NavLink href="/uses">
                             <UsesIcon />
                             Uses
                         </NavLink>
