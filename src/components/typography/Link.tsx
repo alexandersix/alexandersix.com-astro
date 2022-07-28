@@ -10,7 +10,7 @@ export const Link = ({
 }) => {
     return (
         <a
-            class="inline-flex items-center text-base font-normal tracking-wide text-white"
+            class="inline-flex items-center gap-1 text-base font-normal tracking-wide text-white"
             href={href}
         >
             {children}
