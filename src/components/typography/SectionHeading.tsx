@@ -8,8 +8,12 @@ export const SectionHeading = ({
 }) => {
     return (
         <div class="mb-6 flex items-center gap-4">
-            <h2 class="heading text-3xl font-semibold text-white">{children}</h2>
-            <SectionLine />
+            <h2 class="relative w-full bg-black-light text-3xl font-semibold text-white">
+                <span class="relative z-10 inline bg-inherit pr-4">
+                    {children}
+                </span>
+                <SectionLine />
+            </h2>
         </div>
     );
 };
