@@ -4,7 +4,7 @@ export const PageHeading = ({ children }) => {
     const lastWord = childTokens.at(-1);
 
     return (
-        <h1 class="text-6xl text-white text-left">
+        <h1 class="text-6xl text-white text-left font-light">
             {mainText} <span class="site-gradient text-transparent bg-clip-text font-semibold">{lastWord}</span>
         </h1>
     );

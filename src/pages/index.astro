@@ -4,9 +4,15 @@ import { PageHeading } from "../components/typography/PageHeading";
 import { PageSection } from "../components/layout/PageSection";
 import Layout from "../layouts/layout.astro";
 import { PageSubtitle } from "../components/typography/PageSubtitle";
+import { Image } from "../components/Image";
 
 import headerImage from "/images/homepage-hero-mobile.jpg";
-import { Image } from "../components/Image";
+import { TwitchIcon } from "../components/icons/TwitchIcon";
+import { TwitterIcon } from "../components/icons/TwitterIcon";
+import { GithubIcon } from "../components/icons/GithubIcon";
+import { YoutubeIcon } from "../components/icons/YoutubeIcon";
+import { SectionHeading } from "../components/typography/SectionHeading";
+import { Paragraph } from "../components/typography/Paragraph";
 
 const metas = {
     title: "Home",
@@ -17,7 +23,7 @@ const metas = {
 
 <Layout>
     <Metas slot="head" {...metas} />
-    <PageSection>
+    <PageSection isTop={true}>
         <PageHeading>Hi, I'm Alex</PageHeading>
         <div class="flex flex-col gap-y-3 mt-8 mb-10">
             <PageSubtitle>Web Developer,</PageSubtitle>
@@ -25,7 +31,32 @@ const metas = {
             <PageSubtitle>Corgi Fanatic.</PageSubtitle>
         </div>
         <Image src={headerImage} alt="Alex holding his corgi, Leia" />
-        <div class="flex justify-between items-center">
+        <div class="flex justify-center items-center gap-x-10 mt-10">
+            <TwitchIcon />
+            <TwitterIcon />
+            <GithubIcon />
+            <YoutubeIcon />
         </div>
+    </PageSection>
+
+    <PageSection>
+        <SectionHeading>About me</SectionHeading>
+        <Paragraph>
+            My name is Alex–it's great to meet you! I'm a web developer
+            specializing in building custom experiences with the Laravel
+            ecosystem, Vue.js, and Svelte.
+        </Paragraph>
+        <Paragraph>
+            Along with building applications for my day-job, I am a Software
+            Development streamer on Twitch! Together, my chat and I learn new
+            web concepts and build awesome software with our favorite
+            programming languages and frameworks.
+        </Paragraph>
+        <Paragraph>
+            Outside of writing software, I'm a passionate advocate for
+            inentional, hands-on mentorship and building effective
+            apprenticeship programs to bring more folks into this incredible
+            software community.
+        </Paragraph>
     </PageSection>
 </Layout>

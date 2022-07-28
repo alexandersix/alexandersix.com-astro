@@ -1,3 +1,18 @@
 .site-gradient {
     @apply bg-gradient-to-r from-aqua-dark to-green-light;
 }
+
+/* .heading { */
+/*     position: relative; */
+/* } */
+/**/
+/* .heading::after { */
+/*     content: " "; */
+/*     height: 2px; */
+/*     width: 235px; */
+/*     @apply bg-gradient-to-r from-aqua-dark to-green-light; */
+/*     display: block; */
+/*     position: absolute; */
+/*     bottom: 15px; */
+/*     right: 0; */
+/* } */
