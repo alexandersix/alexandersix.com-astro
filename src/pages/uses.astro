@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/layout.astro";
+import Metas from "../components/Metas.astro";
+import { PageSection } from "../components/layout/PageSection";
+import { PageHeading } from "../components/typography/PageHeading";
+
+const metas = {
+    title: "Uses",
+    description: "Uses page description",
+    featuredImage: "#"
+}
+---
+
+<Layout>
+    <Metas slot="head" {...metas} />
+    <PageSection isTop={true}>
+        <PageHeading>What I Use</PageHeading>
+    </PageSection>
+</Layout>
