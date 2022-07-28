@@ -6,13 +6,16 @@ import Layout from "../layouts/layout.astro";
 import { PageSubtitle } from "../components/typography/PageSubtitle";
 import { Image } from "../components/Image";
 
-import headerImage from "/images/homepage-hero-mobile.jpg";
 import { TwitchIcon } from "../components/icons/TwitchIcon";
 import { TwitterIcon } from "../components/icons/TwitterIcon";
 import { GithubIcon } from "../components/icons/GithubIcon";
 import { YoutubeIcon } from "../components/icons/YoutubeIcon";
 import { SectionHeading } from "../components/typography/SectionHeading";
 import { Paragraph } from "../components/typography/Paragraph";
+import { Link } from "../components/typography/Link";
+
+import headerImage from "/images/homepage-hero-mobile.jpg";
+import kirschbaumLogo from "/images/kirschbaum-logo.jpg";
 
 const metas = {
     title: "Home",
@@ -57,6 +60,40 @@ const metas = {
             inentional, hands-on mentorship and building effective
             apprenticeship programs to bring more folks into this incredible
             software community.
+        </Paragraph>
+    </PageSection>
+
+    <PageSection>
+        <SectionHeading>Where I work</SectionHeading>
+        <div class="mb-12">
+            <Link href="https://kirschbaumdevelopment.com"
+                >Visit Kirschbaum
+            </Link>
+        </div>
+        <div class="mb-10">
+            <Image src={kirschbaumLogo} alt="Kirschbaum Development Group logo"
+            />
+        </div>
+        <Paragraph>
+            The Kirschbaum team of Laravel experts are exceptional coders, and
+            exceptional problem solvers &mdash; if there's a more efficient path
+            to reach your goals, we'll find it. We've helped companies save
+            millions, and we've enabled organizations without millions to
+            compete with those who do.
+        </Paragraph>
+        <Paragraph>
+            The companies we work with appreciate our ability to work seamlessly
+            with both their technical and non-technical teams. We cut out the
+            middlemen &mdash; our developers are great communicators with
+            business sense, so you speak directly with the people working on
+            your project and nothing is lost in translation.
+        </Paragraph>
+        <Paragraph>
+            With a history of delivering practical solutions to complex
+            problems, our focus is on your long-term success. We leverage
+            innovative approaches and bleeding edge technologies to get your
+            products and services to market quickly, while anticipating the need
+            to scale and adapt as your business requirements evolve.
         </Paragraph>
     </PageSection>
 </Layout>
