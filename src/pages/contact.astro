@@ -3,17 +3,87 @@ import Layout from "../layouts/layout.astro";
 import Metas from "../components/Metas.astro";
 import { PageSection } from "../components/layout/PageSection";
 import { PageHeading } from "../components/typography/PageHeading";
+import { Paragraph } from "../components/typography/Paragraph";
+import { Link } from "../components/typography/Link";
+import { SectionHeading } from "../components/typography/SectionHeading";
+import { InlineLink } from "../components/typography/InlineLink";
 
 const metas = {
     title: "Drop a Line",
     description: "Contact page description",
-    featuredImage: "#"
-}
+    featuredImage: "#",
+};
 ---
 
 <Layout>
     <Metas slot="head" {...metas} />
     <PageSection isTop={true}>
         <PageHeading>Drop a Line</PageHeading>
+
+        <div class="my-10">
+            <Paragraph>
+                Want to get in touch? Feel free to reach out using any of the
+                below methods of communication. I’d love to hear from you!
+            </Paragraph>
+        </div>
+
+        <div class="grid w-fit grid-cols-2 gap-x-16 gap-y-5">
+            <Link href="#">Twitter</Link>
+            <Link href="#">LinkedIn</Link>
+            <Link href="#">Github</Link>
+            <Link href="#">Twitch</Link>
+            <Link href="#">YouTube</Link>
+        </div>
+    </PageSection>
+
+    <PageSection>
+        <SectionHeading>Work</SectionHeading>
+        <Paragraph>
+            I’m not currently looking for freelance work, but we’re always open
+            to talking through your next big idea at
+            <InlineLink href="https://kirschbaumdevelopment.com">
+                Kirschbaum
+            </InlineLink>, so <InlineLink
+                href="https://kirschbaumdevelopment.com/contact"
+            >
+                drop us a line
+            </InlineLink> and see if we can help! Just let them know I sent you!
+        </Paragraph>
+    </PageSection>
+
+    <PageSection>
+        <SectionHeading>Speaking</SectionHeading>
+        <Paragraph>
+            I’m happy to talk through your event and what part you’d want me to
+            play in it! I love speaking and teaching, so if your event /
+            conference would benefit from having me, I’d love to hear all about
+            it. <InlineLink href="#">Send me an email</InlineLink> and we can get
+            the conversation going about needs, rates, dates, etc.
+        </Paragraph>
+    </PageSection>
+
+    <PageSection>
+        <SectionHeading>Mentorship</SectionHeading>
+        <Paragraph>
+            I love helping developers excel and build cool stuff! Whether or not
+            I can personally help you is down to my schedule, what you’re
+            looking for, and my own personal discretion (if I’m going to be a
+            mentor, I want to make sure that it’s going to be worth the time for
+            BOTH of us). Even if I can’t personally help, I may be able to point
+            you in the direction of other mentors that I know who might be able
+            to help you out. Reach out to me on <InlineLink href="#">
+                Twitter
+            </InlineLink> and let’s see if I can help.
+        </Paragraph>
+    </PageSection>
+
+    <PageSection>
+        <SectionHeading>Friends!</SectionHeading>
+        <Paragraph>
+            I love making new friends! <InlineLink href="#">Twitter</InlineLink>
+            is the best place to get in touch and start a conversation, but jumping
+            on to my <InlineLink href="#">Twitch</InlineLink> stream is a great place
+            to chat with me as well!
+        </Paragraph>
     </PageSection>
 </Layout>
