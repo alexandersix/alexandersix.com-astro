@@ -35,10 +35,18 @@ const metas = {
         </div>
         <Image src={headerImage} alt="Alex holding his corgi, Leia" />
         <div class="flex justify-center items-center gap-x-10 mt-10">
-            <TwitchIcon />
-            <TwitterIcon />
-            <GithubIcon />
-            <YoutubeIcon />
+            <a href="#">
+                <TwitchIcon />
+            </a>
+            <a href="#">
+                <TwitterIcon />
+            </a>
+            <a href="#">
+                <GithubIcon />
+            </a>
+            <a href="#">
+                <YoutubeIcon />
+            </a>
         </div>
     </PageSection>
 
@@ -100,9 +108,7 @@ const metas = {
     <PageSection>
         <SectionHeading>Featured Posts</SectionHeading>
         <div class="mb-12">
-            <Link href="/posts">
-                Browse more posts
-            </Link>
+            <Link href="/posts">Browse more posts</Link>
         </div>
     </PageSection>
 </Layout>
