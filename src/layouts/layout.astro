@@ -2,6 +2,7 @@
 import "../styles/fonts.css";
 import "../styles/custom.css";
 import { Navbar } from "../components/navigation/Navbar";
+import { SiteFooter } from "../components/layout/SiteFooter";
 ---
 
 <!doctype html>
@@ -12,5 +13,6 @@ import { Navbar } from "../components/navigation/Navbar";
     <body class="bg-black-light text-white-alt font-normal">
         <Navbar client:visible />
         <slot />
+        <SiteFooter />
     </body>
 </html>
