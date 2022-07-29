@@ -22,12 +22,12 @@ export const Navbar = () => {
             </div>
 
             <div
-                class={`fixed inset-0 h-screen overflow-x-hidden bg-transparent ${
+                class={`fixed inset-0 z-50 h-screen overflow-x-hidden bg-transparent ${
                     isOpen ? "pointer-events-auto" : "pointer-events-none"
                 }`}
             >
                 <nav
-                    class={`top-0 bottom-0 right-0 absolute w-3/4 transform bg-black-dark p-6 duration-300 ease-out ${
+                    class={`absolute top-0 bottom-0 right-0 w-3/4 transform bg-black-dark p-6 duration-300 ease-out ${
                         isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
                 >
