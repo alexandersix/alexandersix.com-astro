@@ -1,0 +1,125 @@
+{
+    "software": [
+        {
+            "heading": "Kitty",
+            "href": "#",
+            "content": "Kitty is my terminal of choice at the moment. I used Alacritty for a long time, and still love it, but I wanted to have ligature support in my terminal, which is something that Alacritty doesn’t provide. Kitty is super quick, easy to configure, and does everything that I need a terminal to do, which is a lot, considering I do almost everything in my terminal."
+        },
+        {
+            "heading": "Neovim",
+            "href": "#",
+            "content": "Neovim is my current editor, and I don’t ever see myself going back to any other. I started using Vim/Neovim a few years ago, but in 2021 I decided that if I was going to give it a shot, I’d have to dedicate myself to using it for at least a month or two to get the hang of it. I did, and the rest is history. I love the INCREDIBLY high levels of customization you get with Neovim, because the time between my brain thinking, my fingers reacting, and something happening on my screen is so short now. I’m working at the speed of thought, and it’s amazing."
+        },
+        {
+            "heading": "Tmux",
+            "href": "#",
+            "content": "I use Tmux as a simple, easy way to manage projects and sessions in my terminal. I know there’s a lot more that Tmux can do, and I’m only scratching the surface, but knowing that I can spin up a Tmux session, detach from it, and come right back to where I was later on is so satisfying, especially when I’m jumping between a lot of different projects."
+        },
+        {
+            "heading": "Smug",
+            "href": "#",
+            "content": "To keep my Tmux sessions somewhat standardized and quick to spin up, I use Smug, a Tmux session manager written in Go that lets me specify layouts, project roots, and commands to be run on creation/deletion of a session for each and every project on my system. I’ll write a blog post on exactly what my setup looks like, but in short, I can spin up any environment I could possibly want for any tech stack I happen to be working in with a few keystrokes."
+        },
+        {
+            "heading": "Brave",
+            "href": "#",
+            "content": "Brave is my browser of choice. I like the Chromium engine, but I also like the privacy benefits that come with using Brave. I also have Firefox and Safari waiting in the wings to test browser compatability, or just to use if I’m feeling like doing something a little different."
+        },
+        {
+            "heading": "Dank Mono",
+            "href": "#",
+            "content": "I use Dank Mono as my editor font. It’s a paid font (though, not very expensive), and it’s easy to read, has a nice cursive itallic weight, and has just enough flair to keep things interesting."
+        },
+        {
+            "heading": "Gruvbox",
+            "href": "#",
+            "content": "My editor and terminal color scheme is Gruvbox, the same color scheme that I used to build this site! I avoided Gruvbox for a long time in favor of Nord (a color scheme that I still love, to be fair), mostly because it looked too brown and dingy to my eye. Eventually, though, I fell in love with Gruvbox because it didn’t strain my eyes nearly as badly as more “blue-based” color schemes."
+        },
+        {
+            "heading": "Dotfiles",
+            "href": "#",
+            "content": "Any and all configurations that I can possibly have in dotfile format can be found here. Don’t just clone my dotfiles down and use them yourself, though. They might work for you out of the box, but they’re written specifically for me! Use them as a guide to see and learn cool things, and then adopt your own configurations!"
+        },
+        {
+            "heading": "Figma",
+            "href": "#",
+            "content": "Figma is my software design tool of choice. It’s easy to use, free, and browser-based, so it’s incredibly simple to share designs with people who don’t normally work in Figma."
+        },
+        {
+            "heading": "TablePlus",
+            "href": "#",
+            "content": "I use TablePlus in order to work with databases when developing applications, but I’m not 100% tied to it. It’s a great application, don’t get me wrong, but I’d like to see what I can do with just a terminal-based system."
+        },
+        {
+            "heading": "Obsidian",
+            "href": "#",
+            "content": "Right now, I use Obsidian to take notes, manage projects, and otherwise be my second brain. I jump between note-taking programs frequently, and like with TablePlus, I’d love to find something similar that I can use in my terminal. I will say, if nothing else, the PARA method for task/project management has piqued my interest, and seems to integrate really well into Notion."
+        }
+    ],
+    "hardware": [
+        {
+            "heading": "MacBook Pro",
+            "href": "#",
+            "content": "My main development machine is a 2021 M1 Max 16” MacBook Pro with 16GB of memory. It’s an absolute beast of a machine, and I love how snappy it is when moving things around and interacting with the interface. Everything I could possibly want to write code for is possible on this computer, and I don’t think I’ve heard the fans spin up more than a handful of times since I started using it."
+        },
+        {
+            "heading": "Linux Tower",
+            "href": "#",
+            "content": "I also have a Linux tower with an AMD Ryzen 7 processor, 16GB of memory, a Nvidia 980Ti graphics card, and 1TB of NVMe M.2 storage. It’s running ArcoLinux (a distro based on ArchLinux) with the Awesome Window Manager layered on top. I love using that machine–it’s fun to tinker with and easy to develop on when I’m wanting something a little different than the macOS I typically spend my days in."
+        },
+        {
+            "heading": "Monitor",
+            "href": "#",
+            "content": "My main monitor is a Samsung 34-inch curved ultrawide monitor, and I run my laptop open as a second screen off to the side on a metal stand I got on Amazon."
+        },
+        {
+            "heading": "Keyboard",
+            "href": "#",
+            "content": "The ZSA Moonlander is my keyboard of choice. I’ve always had pain problems with my fingers, wrists, and elbows (I blame playing too much competitive tennis), so the idea of a split, ergonomic keyboard sounded like a good investment. While it’s not nearly as nice as some mechanical keyboards that I’ve seen before, it’s almost completely removed the pain I’d have from typing on a normal keyboard."
+        },
+        {
+            "heading": "Mouse",
+            "href": "#",
+            "content": "I use an MX Master 2 on my desk. I’d upgrade to the newest version, but this one’s still kicking, so I have no reason to make the switch right now."
+        }
+    ],
+    "audioVideo": [
+        {
+            "heading": "Microphone",
+            "href": "#",
+            "content": "My main audio input is a Shure SM7B dynamic microphone. It’s an amazing sounding mic, but the best feature for me is that it all but removes background noise and focuses right in on my voice. That’s a life-changing feature when you have a small child running around the house during work hours!"
+        },
+        {
+            "heading": "Audio Interface",
+            "href": "#",
+            "content": "I connect the SM7B to my computer using a Cloudlifter CL-1 to make sure the signal is strong enough to be heard, and a Focusrite Scarlett Solo to convert the input from XLR out of the mic to USB into the computer."
+        },
+        {
+            "heading": "Headphones",
+            "href": "#",
+            "content": "I have a pair of Sony WH-1000XM4 over-ear headphones that I use when I’m on video calls, or just to listen to music and block out everything else while I try to focus. They’re great! I also have a pair of first-gen Airpods that I’ll use from time to time if my ears get tired or if I just need to pop something in quick."
+        },
+        {
+            "heading": "Webcam / Camera",
+            "href": "#",
+            "content": "A recent update to the office setup, I use a Sony a6400 mirrorless camera and a Sigma 16mm F1.4 wide angle prime as my webcam and to record videos. The feed gets sent out of the camera into the Elgato Camlink 4k which acts as the input into my computer for things like Zoom, OBS, etc. It was a big investment, but the image quality has improved so much over the webcam that I was previously using."
+        },
+        {
+            "heading": "Lights",
+            "href": "#",
+            "content": "To light up my face and give the video some depth, I use two Elgato Key Lights, one on either side of my desk. They were an expensive option, but they do what they say on the box and I haven’t had to mess with them much at all except to get my preferred settings dialed in."
+        }
+    ],
+    "office": [
+        {
+            "heading": "Desk",
+            "href": "#",
+            "content": "My desk is a large, L-shaped desk made up of two IKEA Karlby countertops. The main part of the desk is set up on a pair of white, Fully motorized standing desk legs, and the other desktop is set on top of a pair of IKEA Alex drawers."
+        },
+        {
+            "heading": "Chair",
+            "href": "#",
+            "content": "I sit in the Autonomous Ergochair, which honestly, I was a little disappointed in. I had an Ergochair version 1 at a previous job, and I loved it. Thinking it would be much the same, I ordered the second version of the Ergochair, and it’s fine. The big complaint that I have is that the cushion isn’t nearly as comfortable as the first version. It does have really good lumbar support, though, so that’s been great for me since I sit practically all day when I’m working."
+        }
+    ]
+}

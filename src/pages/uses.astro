@@ -3,17 +3,67 @@ import Layout from "../layouts/layout.astro";
 import Metas from "../components/Metas.astro";
 import { PageSection } from "../components/layout/PageSection";
 import { PageHeading } from "../components/typography/PageHeading";
+import { Paragraph } from "../components/typography/Paragraph";
+import { InlineLink } from "../components/typography/InlineLink";
+import { SectionHeading } from "../components/typography/SectionHeading";
+
+import json from "../data/uses.json";
+import { UsesSection } from "../components/uses/UsesSection";
+
+interface UsesEntry {
+    heading: string;
+    href: string;
+    content: string;
+}
+
+interface UsesJson {
+    software: Array<UsesEntry>;
+    hardware: Array<UsesEntry>;
+    audioVideo: Array<UsesEntry>;
+    office: Array<UsesEntry>;
+}
+
+const { software, hardware, audioVideo, office } = json as UsesJson;
 
 const metas = {
     title: "Uses",
     description: "Uses page description",
-    featuredImage: "#"
-}
+    featuredImage: "#",
+};
 ---
 
 <Layout>
     <Metas slot="head" {...metas} />
     <PageSection isTop={true}>
         <PageHeading>What I Use</PageHeading>
+        <div class="my-10">
+            <Paragraph>
+                I love getting to see what other developers are doing and using
+                to excel in their craft, and this page is no exception to that
+                rule. Have a question about what I’m using at any given time?
+                Check here–I’m keeping it as up-to-date as I possibly can. And
+                while you’re at it, check out <InlineLink
+                    href="https://uses.tech"
+                    >uses.tech
+                </InlineLink> for a list of everyone’s /uses pages!
+            </Paragraph>
+            <Paragraph>
+                Notice I’m missing something? Drop me a line <InlineLink
+                    href="https://twitter.com/alexandersix_"
+                    >@alexandersix_
+                </InlineLink> on Twitter and I’ll add it to the list!
+            </Paragraph>
+        </div>
+    </PageSection>
+
+    <PageSection>
+        <SectionHeading>Software</SectionHeading>
+        {software.map((entry) => <UsesSection {...entry} />)}
+        <SectionHeading>Hardware</SectionHeading>
+        {hardware.map((entry) => <UsesSection {...entry} />)}
+        <SectionHeading>Audio/Visual</SectionHeading>
+        {audioVideo.map((entry) => <UsesSection {...entry} />)}
+        <SectionHeading>My Desk</SectionHeading>
+        {office.map((entry) => <UsesSection {...entry} />)}
     </PageSection>
 </Layout>
