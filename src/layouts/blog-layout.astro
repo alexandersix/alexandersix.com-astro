@@ -1,0 +1,39 @@
+---
+import { PageSection } from "../components/layout/PageSection";
+import { PageHeading } from "../components/typography/PageHeading";
+import { Paragraph } from "../components/typography/Paragraph";
+import Layout from "./layout.astro";
+
+const { content } = Astro.props;
+
+type Categories = Array<string>;
+---
+
+<Layout>
+    <PageSection hasXPadding={false} isTop={true}>
+        <PageHeading isBlog={true}>{content.title}</PageHeading>
+        <div class="my-12">
+            <Paragraph>{content.description}</Paragraph>
+        </div>
+        <img
+            src={content.featuredImage}
+            class="w-full mb-12"
+            alt={content.featuredImageAlt}
+        />
+        <div
+            class="flex justify-start items-center gap-1 text-sm font-light px-6"
+        >
+            {content.categories.map(
+                (category: string, index: number, array: Categories) => {
+                    return <span class="inline-block">{category},</span>;
+                }
+            )}
+            <hr class="site-gradient h-0.5 w-8 rounded-lg border-none" />
+            <span>{content.publishedAt}</span>
+        </div>
+    </PageSection>
+
+    <div class="prose dark:prose-invert px-6">
+        <slot />
+    </div>
+</Layout>

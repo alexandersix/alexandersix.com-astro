@@ -57,5 +57,5 @@ module.exports = {
 			sans: ["THICCCBOI", ...defaultTheme.fontFamily.sans],
 		}
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/typography")],
 }

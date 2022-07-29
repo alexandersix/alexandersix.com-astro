@@ -6,5 +6,10 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   // Enable Preact to support Preact JSX components.
-  integrations: [preact(), tailwind()]
+  integrations: [preact(), tailwind()],
+  markdown: {
+    shikiConfig: {
+      // theme: 'gruvbox',
+    }
+  }
 });
