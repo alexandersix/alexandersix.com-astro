@@ -53,3 +53,17 @@ It is I, your _wonderful_ **leader**.
 const dog = "Leia"
 console.log(dog)
 ```
+
+```php
+namespace App;
+
+class Dog
+{
+    protected $name;
+
+    public function bark(): string
+    {
+        return "bark";
+    }
+}
+```
