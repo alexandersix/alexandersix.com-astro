@@ -1,8 +1,8 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
+	content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
 	theme: {
 		extend: {
 			colors: {
@@ -50,12 +50,47 @@ module.exports = {
 					DEFAULT: "#a89984",
 					dark: "#ebdbb2",
 					light: "#fbf1c7",
-				}
+				},
 			},
+			typography: ({ theme }) => ({
+				gruvbox: {
+					css: {
+						"--tw-prose-body": theme("colors.white.alt"),
+						"--tw-prose-headings": theme("colors.white.DEFAULT"),
+						"--tw-prose-lead": theme("colors.white.alt"),
+						"--tw-prose-links": theme("colors.green.light"),
+						"--tw-prose-bold": theme("colors.white.alt"),
+						"--tw-prose-counters": theme("colors.beige.dark"),
+						"--tw-prose-bullets": theme("colors.beige.dark"),
+						"--tw-prose-hr": theme("colors.green.light"),
+						"--tw-prose-quotes": theme("colors.white.alt"),
+						"--tw-prose-quote-borders": theme("colors.green.light"),
+						"--tw-prose-captions": theme("colors.white.alt"),
+						"--tw-prose-code": theme("colors.green.light"),
+						"--tw-prose-pre-code": theme("colors.white.alt"),
+						"--tw-prose-pre-bg": theme("colors.black.dark"),
+						"--tw-prose-th-borders": theme("colors.white.DEFAULT"),
+						"--tw-prose-td-borders": theme("colors.white.DEFAULT"),
+					},
+				},
+				DEFAULT: {
+					css: {
+						img: {
+							borderRadius: theme("borderRadius.xl")
+						},
+						blockQuote: {
+							fontWeight: theme("fontWeight.light")
+						},
+						code: {
+							fontWeight: theme("fontWeight.normal")
+						}
+					}
+				}
+			}),
 		},
 		fontFamily: {
 			sans: ["THICCCBOI", ...defaultTheme.fontFamily.sans],
-		}
+		},
 	},
 	plugins: [require("@tailwindcss/typography")],
-}
+};
