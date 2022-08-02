@@ -15,11 +15,13 @@ const { content } = Astro.props;
         <div class="px-6 my-12">
             <Paragraph>{content.description}</Paragraph>
         </div>
-        <img
-            src={content.featuredImage}
-            class="w-full mb-12"
-            alt={content.featuredImageAlt}
-        />
+        {content.featuredImage && (
+            <img
+                src={content.featuredImage}
+                class="mb-12 w-full"
+                alt={content.featuredImageAlt}
+            />
+        )}
         <div
             class="flex justify-start items-center gap-3 text-sm font-light px-6"
         >

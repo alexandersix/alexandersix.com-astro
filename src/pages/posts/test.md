@@ -6,6 +6,7 @@ featuredImage: /images/personalized-brand.jpg
 featuredImageAlt: This is alt text
 categories: ["Design", "Svelte"]
 publishedAt: Jan 17, 2022
+draft: false
 ---
 
 ## Hello World!
